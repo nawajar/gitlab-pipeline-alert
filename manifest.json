@@ -1,0 +1,22 @@
+{
+    "name": "Gitlab Pipeline Alert",
+    "version": "3.0",
+    "description": "just alert!!",
+    "browser_action": {
+        "default_title": "Pipeline Alert",
+        "default_popup": "index.html"
+    },
+    "content_scripts":[
+        {
+          "matches":[
+            "<all_urls>"
+          ],
+          "js": ["content.js"]
+        }
+      ],
+    "web_accessible_resources": [
+		"sound.mp3"
+	],
+    "permissions": ["activeTab", "declarativeContent", "storage", "<all_urls>"],
+    "manifest_version": 2
+  }
