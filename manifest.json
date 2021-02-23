@@ -14,9 +14,6 @@
           "js": ["content.js"]
         }
       ],
-    "web_accessible_resources": [
-		"sound.mp3"
-	],
     "permissions": ["activeTab", "declarativeContent", "storage", "<all_urls>"],
     "manifest_version": 2
   }

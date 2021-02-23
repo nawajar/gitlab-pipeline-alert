@@ -7,7 +7,6 @@ function listenChange(params) {
     var audio = new Audio(params.soundFile);
     var tempStatus = '';
     var alertStatus = matchStatus[params.alertStatus];
-    console.log(alertStatus);
     setInterval(() => {
         var status = document.getElementsByClassName('table-mobile-content')[0].innerText;
         var predicate = (status ==  alertStatus);
