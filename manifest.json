@@ -4,7 +4,8 @@
     "description": "just alert!!",
     "browser_action": {
         "default_title": "Pipeline Alert",
-        "default_popup": "index.html"
+        "default_popup": "index.html",
+        "default_icon": "clock-enable.png"
     },
     "content_scripts":[
         {

@@ -102,6 +102,7 @@ function documentEvents() {
     var alertStatus = document.getElementById('status_input').value;
     document.getElementById('watch_btn').disabled = true;
     document.getElementById('stop_btn').disabled = false;
+    chrome.browserAction.setIcon({'path': 'clock-enable.png'});
     if(localStorage['alert_type'] == 'web'){
       audioToBase64(soundFile).then((res) => {
         watchActon({
@@ -121,6 +122,7 @@ function documentEvents() {
   document.getElementById('stop_btn').addEventListener('click', () => {
     document.getElementById('watch_btn').disabled = false;
     document.getElementById('stop_btn').disabled = true;
+    chrome.browserAction.setIcon({'path': 'clock-disable.png'});
     stopInterval();
     intervalapi > 0 ? clearInterval(intervalapi):'';
   });
